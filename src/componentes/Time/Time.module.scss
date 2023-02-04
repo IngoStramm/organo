@@ -1,0 +1,123 @@
+.wrapper {
+    text-align: center;
+    padding-block: 34px;
+    .container {
+        max-width: var(--max-width);
+        margin-inline: auto;
+    }
+    h3 {
+        display: inline-block;
+        font-family: "Prata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        border-bottom-width: 4px;
+        border-style: solid;
+        padding-bottom: 14px;
+        margin-bottom: 50px;
+    }
+    .lista-colaboradores {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        gap: 20px;
+        padding-inline: 20px;
+    }
+    &.programacao {
+        background-color: var(--color-background-programacao);
+        header {
+            &:before {
+                background-color: var(--color-highlight-programacao);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-programacao);
+        }
+    }
+    &.frontend {
+        background-color: var(--color-background-frontend);
+        header {
+            &:before {
+                background-color: var(--color-highlight-frontend);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-frontend);
+        }
+    }
+    &.datascience {
+        background-color: var(--color-background-datascience);
+        header {
+            &:before {
+                background-color: var(--color-highlight-datascience);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-datascience);
+        }
+    }
+    &.devops {
+        background-color: var(--color-background-devops);
+        header {
+            &:before {
+                background-color: var(--color-highlight-devops);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-devops);
+        }
+    }
+    &.ux {
+        background-color: var(--color-background-ux);
+        header {
+            &:before {
+                background-color: var(--color-highlight-ux);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-ux);
+        }
+    }
+    &.mobile {
+        background-color: var(--color-background-mobile);
+        header {
+            &:before {
+                background-color: var(--color-highlight-mobile);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-mobile);
+        }
+    }
+    &.inovacao {
+        background-color: var(--color-background-inovacao);
+        header {
+            &:before {
+                background-color: var(--color-highlight-inovacao);
+            }
+        }
+        h3 {
+            border-bottom-color: var(--color-highlight-inovacao);
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        .lista-colaboradores {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+        .lista-colaboradores {
+            grid-template-columns: repeat(4, 1fr);
+            padding-inline: 0;
+        }
+    }
+}

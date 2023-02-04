@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    label {
+        display: block;
+        font-size: 1.125rem;
+        font-weight: 600;
+    }
+    input {
+        display: block;
+        padding: 30px 20px;
+        background-color: #fff;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.21rem;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+        &::placeholder {
+            font: inherit;
+            color: #A4A4A4;
+        }
+        &:active,
+        &:focus,
+        &:focus:active {
+            outline: none;
+        }
+    }
+}

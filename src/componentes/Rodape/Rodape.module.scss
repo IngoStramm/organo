@@ -1,0 +1,43 @@
+.wrapper {
+    background-color: var(--color-primary-1);
+    padding-block: 35px;
+    background-image: url(../../assets/images/fundo.png);
+    background-position: center center;
+    background-repeat: repeat;
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        max-width: var(--max-width);
+        margin: auto;
+        gap: 40px;
+    }
+    .social-media {
+        display: flex;
+        // justify-content: space-around;
+        align-items: center;
+        gap: 35px;
+        img {
+            height: 25px;
+        }
+    }
+    .logo {
+        max-width: 160px;
+    }
+    .powered {
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        .container {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+}

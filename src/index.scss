@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Vars
+
+:root {
+    // Cores principais
+    --color-primary-1: #6278F7;
+    --color-primary-2: #95FFD4;
+    --color-primary-3: #95FFD4;
+
+    // Cores Fundos
+    --color-background-1: #D9F7E9;
+    --color-background-2: #E8F8FF;
+    --color-background-3: #F0F8E2;
+    --color-background-4: #FDE7E8;
+    --color-background-5: #FAE9F5;
+    --color-background-6: #FFF5D9;
+    --color-background-7: #FFEEDF;
+
+    // Cores Destaques
+    --color-highlight-1: #57C278;
+    --color-highlight-2: #82CFFA;
+    --color-highlight-3: #A6D157;
+    --color-highlight-4: #E06B69;
+    --color-highlight-5: #DB6EBF;
+    --color-highlight-6: #FFBA05;
+    --color-highlight-7: #FF8A29;
+
+    // Cores Times
+    --color-highlight-programacao: var(--color-highlight-1);
+    --color-background-programacao: var(--color-background-1);
+
+    --color-highlight-frontend: var(--color-highlight-2);
+    --color-background-frontend: var(--color-background-2);
+
+    --color-highlight-datascience: var(--color-highlight-3);
+    --color-background-datascience: var(--color-background-3);
+
+    --color-highlight-devops: var(--color-highlight-4);
+    --color-background-devops: var(--color-background-4);
+
+    --color-highlight-ux: var(--color-highlight-5);
+    --color-background-ux: var(--color-background-5);
+
+    --color-highlight-mobile: var(--color-highlight-6);
+    --color-background-mobile: var(--color-background-6);
+
+    --color-highlight-inovacao: var(--color-highlight-7);  --color-background-inovacao: var(--color-background-7);
+
+    // Dimensões
+    --max-width: 100%;
+
+    @media (min-width: 992px) {
+        --max-width: 810px
+    }
+
+    @media (min-width: 1200px) {
+        --max-width: 1121px;
+    }
+}
+  
+// Global styles
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+}

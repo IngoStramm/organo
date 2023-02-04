@@ -1,0 +1,18 @@
+.wrapper {
+    padding: 80px 0;
+    background-color: #fff;
+    form {
+        background-color: #f6f6f6;
+        box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        padding: 30px 90px;
+        max-width: var(--max-width);
+        margin: 40px auto;
+        h2 {
+            font-family: "Prata", serif;
+            font-size: 2rem;
+            line-height: 2.6rem;
+            margin-bottom: 40px;
+        }
+    }
+}
